@@ -11,7 +11,7 @@ def substrings(phrase, dictionary)
     # cycle through all the dictionary entries and compare them to the current word from the phrase
     dictionary.each do |entry|
 
-      # if the word includes the entry or a part of it, the entry gets added to the hash
+      # if the word includes the entry or a part of it, the entry gets added to the hash and/or adds one count to it
       if word.include?(entry)
         count[entry] += 1
       end
